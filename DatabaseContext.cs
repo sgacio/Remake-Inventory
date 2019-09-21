@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Remake_Inventory.Model;
 
 namespace remake_inventory
 {
@@ -44,5 +45,6 @@ namespace remake_inventory
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
     public DbSet<Item> Items { get; set; }
+    public DbSet<Location> Locations { get; set; }
   }
 }

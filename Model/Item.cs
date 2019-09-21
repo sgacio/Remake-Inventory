@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace inventory_all_the_things.Models
+namespace Remake_Inventory.Model
 {
   public class Item
   {
@@ -18,5 +18,9 @@ namespace inventory_all_the_things.Models
     public int Price { get; set; }
 
     public DateTime DateOrdered { get; set; } = DateTime.Now;
+
+    public int LocationId { get; set; }
+
+    public Location Location { get; set; }
   }
 }
